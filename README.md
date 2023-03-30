@@ -47,7 +47,7 @@ conda install -c conda-forge opencv=3.4.3
 
 Keras 安裝示意：
 
-![InstallKeras](F:\Thesis\SPER\README\InstallKeras.png)
+![InstallKeras](https://github.com/raphsuz/SaliencyPower/blob/main/README/InstallKeras.png)
 
 ### Python 3 環境相關
 
@@ -101,17 +101,17 @@ pip install subprocess.run
 
 以 Spyder 編輯器示範圖如下：
 
-![LaunchFromSpyder](F:\Thesis\SPER\README\LaunchFromSpyder.png)
+![LaunchFromSpyder](https://github.com/raphsuz/SaliencyPower/blob/main/README/LaunchFromSpyder.png)
 
 接著會看到~~極其陽春的~~程式介面浮現：
 
-![SystemInitial](F:\Thesis\SPER\README\SystemInitial.png)
+![SystemInitial](https://github.com/raphsuz/SaliencyPower/blob/main/README/SystemInitial.png)
 
 ### 預測介面圖片的視覺顯著性分佈
 
 點擊左上角的 Open Image，選擇要進行預測的程式介面截圖，推薦使用 .jpg 格式，Python 對 .jpg 格式的圖像支援最為全面：
 
-![OpenLayoutImage](F:\Thesis\SPER\README\OpenLayoutImage.png)
+![OpenLayoutImage](https://github.com/raphsuz/SaliencyPower/blob/main/README/OpenLayoutImage.png)
 
 出現「等待提示」視窗，點擊確定，等待30秒左右即可看到預測出來的視覺顯著性分佈圖：
 
