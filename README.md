@@ -115,11 +115,11 @@ pip install subprocess.run
 
 出現「等待提示」視窗，點擊確定，等待30秒左右即可看到預測出來的視覺顯著性分佈圖：
 
-![WaintingHint](F:\Thesis\SPER\README\WaintingHint.png)
+![WaintingHint](https://github.com/raphsuz/SaliencyPower/blob/main/README/WaintingHint.png)
 
 接著即預測出該介面的視覺顯著性分佈：
 
-![OriginalLayoutSalience](F:\Thesis\SPER\README\OriginalLayoutSalience.png)
+![OriginalLayoutSalience](https://github.com/raphsuz/SaliencyPower/blob/main/README/OriginalLayoutSalience.png)
 
 備註：如果此步驟無回應，極可能是系統並沒有識別到 Python 2 環境，或是 Python 2 環境中的依賴套件未安裝好所致。
 
@@ -127,51 +127,51 @@ pip install subprocess.run
 
 選擇主題色系（明亮主題、暗沉主題）並點擊確認：
 
-![ConfirmTheme](F:\Thesis\SPER\README\ConfirmTheme.png)
+![ConfirmTheme](https://github.com/raphsuz/SaliencyPower/blob/main/README/ConfirmTheme.png)
 
 讀取介面元件描述檔（.uix）：
 
-![OpenXML](F:\Thesis\SPER\README\OpenXML.png)
+![OpenXML](https://github.com/raphsuz/SaliencyPower/blob/main/README/OpenXML.png)
 
 備註：介面元件描述檔（.uix）取自於 Google 的 uiautomator 工具，該工具被打包於 Android SDK 中，使用該工具對應用程式進行截圖時，便會取得該檔案（.uix）。
 
 元件資料表便會顯示於介面中：
 
-![ElementSheet](F:\Thesis\SPER\README\ElementSheet.png)
+![ElementSheet](https://github.com/raphsuz/SaliencyPower/blob/main/README/ElementSheet.png)
 
 選擇容許的視覺顯著性差異目標參數及矚目元件參數K，即可輸出元件劃分區域，並且取得初始省電介面。
 
 在計算期間，如果使用的是 Windows 系統，程式顯示無回應純屬正常現象，在 Windows 上對 Python  2 模型的調用導致該問題，可至終端介面查看計算過程：
 
-![NoResponseWhenCal](F:\Thesis\SPER\README\NoResponseWhenCal.png)
+![NoResponseWhenCal](https://github.com/raphsuz/SaliencyPower/blob/main/README/NoResponseWhenCal.png)
 
-![TerminalOutput](F:\Thesis\SPER\README\TerminalOutput.png)
+![TerminalOutput](https://github.com/raphsuz/SaliencyPower/blob/main/README/TerminalOutput.png)
 
 完畢後，輸出元件範圍劃分：
 
-![ElementBorder](F:\Thesis\SPER\README\ElementBorder.png)
+![ElementBorder](https://github.com/raphsuz/SaliencyPower/blob/main/README/ElementBorder.png)
 
 點擊確認後，會追加顯示元件排名，以及初始省電介面預覽：
 
-![FirstPowerSavingResult](F:\Thesis\SPER\README\FirstPowerSavingResult.png)
+![FirstPowerSavingResult](https://github.com/raphsuz/SaliencyPower/blob/main/README/FirstPowerSavingResult.png)
 
 ### 測試是否能評估省電介面的視覺顯著性變化
 
 透過下列的操作方式，可以測試輸出省電介面的視覺顯著性分佈與差異評估：
 
-![NewLayoutEvaluationInOnePhase](F:\Thesis\SPER\README\NewLayoutEvaluationInOnePhase.png)
+![NewLayoutEvaluationInOnePhase](https://github.com/raphsuz/SaliencyPower/blob/main/README/NewLayoutEvaluationInOnePhase.png)
 
 首先，點擊 Predict Saliency Map of New Layout ，可於約30秒等待後，取得 SIM、CC分數，以及最右方產生預測的視覺顯著性分佈：
 
-![ClickNnewLayoutPredict](F:\Thesis\SPER\README\ClickNnewLayoutPredict.png)
+![ClickNnewLayoutPredict](https://github.com/raphsuz/SaliencyPower/blob/main/README/ClickNnewLayoutPredict.png)
 
 再點擊 After Saliency Recalculation ，可以取得新舊介面的元件視覺顯著性差異（於元件資料表處顯示）：
 
-![AfterAPhase](F:\Thesis\SPER\README\AfterAPhase.png)
+![AfterAPhase](https://github.com/raphsuz/SaliencyPower/blob/main/README/AfterAPhase.png)
 
 最終能透過點擊Export2csv，在目錄資料夾中產生報告檔案（.csv）：
 
-![Export2csv](F:\Thesis\SPER\README\Export2csv.png)
+![Export2csv](https://github.com/raphsuz/SaliencyPower/blob/main/README/Export2csv.png)
 
 此步驟僅作為測試、除錯使用，若想進行遞迴改進省電介面，則需參考
 
@@ -179,15 +179,15 @@ pip install subprocess.run
 
 若前面測試時，功能均正常執行，則能直接執行右下方 Evaluation and Proceeding 按鈕功能，此功能整合前述3項功能，並輸出最終省電介面建議及色彩表：
 
-![RecurrentImprovedandEvaluation](F:\Thesis\SPER\README\RecurrentImprovedandEvaluation.png)
+![RecurrentImprovedandEvaluation](https://github.com/raphsuz/SaliencyPower/blob/main/README/RecurrentImprovedandEvaluation.png)
 
 點擊該按鈕後，通常需等待至少3分鐘，待程式計算完畢後，方有輸出（於Windows系統時，程式易進入無回應狀態）：
 
-![RecurrentWaiting](F:\Thesis\SPER\README\RecurrentWaiting.png)
+![RecurrentWaiting](https://github.com/raphsuz/SaliencyPower/blob/main/README/RecurrentWaiting.png)
 
 計算完成後，程式跳出提示：
 
-![MissionCompleted](F:\Thesis\SPER\README\MissionCompleted.png)
+![MissionCompleted](https://github.com/raphsuz/SaliencyPower/blob/main/README/MissionCompleted.png)
 
 ### 輸出檔案位置
 
@@ -196,7 +196,7 @@ pip install subprocess.run
 - newlayout.jpg資料夾存放省電版介面的預覽圖及其視覺顯著性分佈
 - .csv檔案則是該介面的元件資料表及其色彩等級表
 
-![ExportFiles](F:\Thesis\SPER\README\ExportFiles.png)
+![ExportFiles](https://github.com/raphsuz/SaliencyPower/blob/main/README/ExportFiles.png)
 
 ### 後續運作
 
